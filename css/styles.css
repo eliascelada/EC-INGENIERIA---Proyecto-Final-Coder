@@ -333,7 +333,7 @@ button {
     width: 250px;
     height: 150px;
   }
-  .nosotros__blocks {
+  .main .nosotros__blocks {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,12 +344,6 @@ button {
   }
   .main .nosotros__blocks .valores {
     width: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .main .nosotros__blocks{
-    display: flex;
-    flex-direction: column;
   }
 }
 /* ------------------------- MAIN de Servicios ------------------------- */
