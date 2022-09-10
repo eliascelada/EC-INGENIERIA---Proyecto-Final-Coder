@@ -1,0 +1,55 @@
+/*------------------------------------------ PIE DE PÁGINA ------------------------------------------*/
+.footer {
+    background-color: map-get($colors, $color-white);
+    grid-area: footer;
+
+    .footer__contenedor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+    
+        .redes__logo {
+            display: inline-block;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .nav__list__footer {
+            list-style: none;
+            
+            .nav__link__footer{
+                text-transform: uppercase;
+                text-decoration: none;
+                color: map-get($colors, $color-black);
+            }
+        }
+    }
+    .firma {
+        text-align: center;
+        background-color: map-get($colors, $color-back-black);
+        color: map-get($colors, $color-white);
+        font-size: smaller;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer__contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+    
+        .footer__img {
+            margin-bottom: 30px;
+        }
+    
+        .nav__footer {
+            margin-bottom: 30px;
+        }
+    }
+}

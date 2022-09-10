@@ -1,0 +1,42 @@
+/*------------------------------------------ ENCABEZADO ------------------------------------------*/
+.header {
+    background-color: map-get($colors, $color-white);
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+    
+    header img {
+        margin: 5px;
+    }
+    
+    .nav__list {
+        list-style: none;
+        display: flex;
+        margin: 15px;
+        
+        .nav__item {
+            padding: 15px;
+            
+            .nav__link {
+                color: map-get($colors, $color-txt-black);
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .nav__list {
+            @extend .header;
+        }
+    }
+}

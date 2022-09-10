@@ -1,0 +1,110 @@
+/* ------------------------- MAIN de Servicios ------------------------- */
+
+.main {
+    .main__service__content {
+        padding: 30px;
+
+        .main__service__text {
+            padding-bottom: 20px;
+            color: map-get($colors, $color-white);
+        }
+        .main__images {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: map-get($colors, $color-back-black);
+            padding: 20px;
+            border-radius: 15px;
+            width: cover;
+
+            .service__card {
+                color: map-get($colors, $color-white);
+                padding: 10rem 0 0;
+                max-width: 280px;
+                border-radius: 1rem;  
+                overflow: hidden;
+                transition: transform 500ms ease;
+                margin: 15px;
+            }
+            .uno {
+                @include uno (url("../img/servicio1.jpg"));
+            }
+            .dos {
+                @include uno (url("../img/servicio2.jpg"));
+            }
+            .tres {
+                @include uno (url("../img/servicio3.jpg"));
+            }
+            .cuatro {
+                @include uno (url("../img/servicio4.jpg"));
+            }
+            .cinco {
+                @include uno (url("../img/servicio5.jpg"));
+            }
+            .seis {
+                @include uno (url("../img/servicio6.jpg"));
+            }
+            .siete {
+                @include uno (url("../img/servicio7.jpg"));
+            }
+            .ocho {
+                @include uno (url("../img/servicio8.jpg"));
+            }
+
+            .service__card:hover, .service__card:focus-within {
+                transform: scale(1.05);
+            }
+            
+            .service__card__content {
+                padding: 1.5rem;
+                background: linear-gradient(black, rgba(0,0,0,0.5));
+                transform: translateY(65%);
+                transition: transform 500ms ease;
+                ;
+            }
+            
+            .service__card:hover .service__card__content {
+                transform: translateY(0);
+                transition-delay: 500ms
+            }
+            
+            .service__card__content__title {
+                font-size: 20px;
+                text-decoration-color: map-get($colors, $color-lightgray);
+            }
+            
+            .service__card__content__body{
+                color: map-get($colors, $color-almostwhite);
+            }
+            
+            .service__button {
+                cursor: ponter;
+                display: inline-block;
+                text-decoration: none;
+                color: map-get($colors, $color-white);
+                background-color: map-get($colors, $color-black);
+                padding: 0.2rem 1rem;
+                border-radius: 0.25rem;
+                transition: all 0.5s ease;
+            }
+            
+            .service__button:hover, .service__button:focus {
+                background-color: map-get($colors, $color-white);
+                color: map-get($colors, $color-black);
+            }
+        }
+        
+        & img {
+            width: 400px;
+            height: 100%;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main__images {
+        display: flex;
+        flex-direction: column;
+    }
+}

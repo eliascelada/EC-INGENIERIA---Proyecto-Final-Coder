@@ -1,0 +1,129 @@
+/* ------------------------- MAIN de Index ------------------------- */
+
+.main {
+    .carousel1 {
+        @include carousel1(url("../img/ppal1.jpg"));
+        
+        .carousel1  h1 {
+            font-size: 50px;
+        }
+        
+        .carousel1 p {
+            font-size: 22px;
+        }
+    }
+    
+    .carousel2 {
+        @include carousel1(url("../img/innovation.jpg"));
+
+        .carousel2  h1 {
+            font-size: 50px;
+        }
+
+        .carousel2 p {
+            font-size: 22px;
+        }
+    }
+    
+    .carousel3 {
+        @include carousel1(url("../img/tableroppal.jpg"));
+            
+        .carousel3  h1 {
+            font-size: 50px;
+        }
+        
+        .carousel3 p {
+            font-size: 22px;
+        }
+    }
+}
+
+/* ------------------------- ASIDE de Index ------------------------- */
+.somos {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+    .somos__img {
+        border-radius: 10px;
+    }
+    
+    .somos__text {
+        padding-left: 30px;
+    }
+    
+    .somos__title {
+        padding: 20px 20px 20px 0;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .somos {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    
+        
+    .somos__img {
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    }
+}
+
+.container {
+    background-color: map-get($colors, $color-back-black);
+    color: map-get($colors, $color-white);
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    padding-top: 30px;
+
+    .services {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .target {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        border-radius: 15px;
+        margin: 30px;
+        background-repeat: no-repeat;
+        background-color: map-get($colors, $color-back-black);
+    
+        .target__text {
+            padding: 30px 30px 0px 30px;
+            text-align: center;
+        }
+        
+        .target__img {
+            max-width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 35px;
+    }
+    
+    h3 {
+        margin: 30px 0px 0px 0px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

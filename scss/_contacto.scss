@@ -1,0 +1,70 @@
+/* ------------------------- MAIN de Contacto ------------------------- */
+.contacto {
+    padding: 30px;
+    background-color: map-get($colors, $color-txt-black);
+    color: map-get($colors, $color-white);
+
+    .contact__title {
+        margin-bottom: 25px;
+    }
+
+    .newlesster {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuadro {
+        background-color: map-get($colors, $color-back-black);
+        padding: 30px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        border-radius: 15px;
+        padding: 30px;
+        background-color: map-get($colors, $color-back-black);
+
+        input {
+            border-radius: 5px;
+            margin-top: 5px;
+            padding: 7px;
+        }
+        
+        select {
+        margin-top: 5px;
+        }
+
+        textarea {
+            max-width: 250px;
+            margin-top: 5px;
+        }
+        
+        .yesornot {
+            padding-top: 10px;
+        }
+        
+        .buttons {
+            display: flex;
+        }
+        
+        .button__send {
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 30px;
+            border-radius: 5px;
+            border: 2px solid #462380;
+            color: map-get($colors, $color-white);
+            background-color: map-get($colors, $color-back-blue);
+            margin: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+}

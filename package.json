@@ -1,0 +1,20 @@
+{
+  "name": "ec-ingenieria---celada-(a-entregar)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliascelada/EC-INGENIERIA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliascelada/EC-INGENIERIA/issues"
+  },
+  "homepage": "https://github.com/eliascelada/EC-INGENIERIA#readme"
+}

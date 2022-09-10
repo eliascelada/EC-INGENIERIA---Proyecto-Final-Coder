@@ -1,0 +1,19 @@
+@mixin carousel1 ($background-image) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    width: cover;
+    color: map-get($colors, $color-white);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+@mixin uno ($background-image) {
+    background-image: $background-image;
+    background-size: cover;
+}

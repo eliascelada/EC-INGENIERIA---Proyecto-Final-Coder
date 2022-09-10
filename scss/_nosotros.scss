@@ -1,0 +1,99 @@
+/* ------------------------- MAIN de Sobre Nosotros ------------------------- */
+
+.main {
+    .nosotros__title {
+        background-color: map-get($colors, $color-txt-black);
+        padding: 30px;
+        color: map-get($colors, $color-white);
+    }
+    
+    .nosotros__history {
+        padding: 30px;
+        background-color: map-get($colors, $color-back-black);
+        color: map-get($colors, $color-white);
+        width: cover;
+    
+        .nosotros__content {
+            display: flex;
+        }
+        
+        .nosotros_text {
+            margin: 20px;
+        }
+        
+        .nosotros__image {
+            margin-right: 20px;
+        }
+    
+        .table {
+            display: flex;
+            padding-top: 20px;
+            justify-content: center;
+            text-align: center;
+            color: map-get($colors, $color-white);
+        }
+    }
+    
+    .nosotros__blocks {
+        display: flex;
+        flex-direction: row;
+        background-color: map-get($colors, $color-txt-black);
+        width: cover;
+        color: map-get($colors, $color-white);
+    
+        .mision {
+            margin: 10px;
+            padding: 30px;
+            width: 50%;
+            text-align: center;
+            border-style: outset;
+        
+            .mision__title {
+                padding-bottom: 10px;
+            }
+            
+            .mision__text {
+                text-align: left;
+            }
+        }
+        
+        .valores {
+            @extend .mision;
+        
+            .valores__title {
+                padding-bottom: 10px;
+            }
+            
+            .valores__text {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nosotros__history{
+        .nosotros__content {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .nosotros__image__container {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .nosotros__image {
+            margin: 20px;
+            width: 250px;
+            height: 150px;
+        }
+    }
+
+    .nosotros__blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;    
+    }
+}

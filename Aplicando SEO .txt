@@ -1,0 +1,3 @@
+En esta ocasión, apliqué los últimos conceptos abordados en las clases de SASSII y SEO. 
+Primeramente, apliqué para SASS un maps, utilicé variables (colores) y apliqué mixin para optimizar líneas de código scss con propiedades y que se repiten. 
+Luego, lo que hice fue comenzar a aplicar SEO, agregando meta etiquetas, en description y keywords. Además, optimicé las imágenes de mi sitio y agregué un "alt" o descripción a cada una.

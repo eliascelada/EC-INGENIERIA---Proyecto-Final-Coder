@@ -1,0 +1,39 @@
+/* ------------------------- MAIN de Proyectos ------------------------- */
+
+.main {
+  background-color: map-get($colors, $color-back-black);
+  padding-bottom: 25px;
+
+  .pro__cont {
+    display: flex;
+    border-style: ridge;
+    color: map-get($colors, $color-white);
+    border-color: map-get($colors, $color-white);
+    background-color: map-get($colors, $color-back-black);
+    margin: 25px;
+    border-radius: 15px;
+
+    .pro__img {
+      margin: 30px;
+      border-radius: 5px;
+    }
+
+    .pro__txt {
+      margin: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pro__cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .pro__img {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
